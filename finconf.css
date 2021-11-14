@@ -1,0 +1,276 @@
+/* Configuração para computador desktop */
+* {
+    margin:0 auto ; /* centraliza todas as caixas */ /*rgb(213, 215, 215);*/
+}
+body{
+    background-color:rgb(213, 215, 215) ;
+}
+
+div.grande{
+    height:2120px;
+    display:flex;
+    flex-direction:row;
+    margin-top: 8vw;
+    border: solid black 2px;
+    width:90%; 
+}
+
+div.caixinha, div.caixinha1, div.logo, div.acesso{
+    margin: 0.521vw;  
+} 
+
+div.caixinha{
+  text-align:center;
+  padding: 0.521vw;
+  box-sizing: border-box;
+  flex: 20%;
+}
+
+div.caixinha1{
+    flex:80%;
+}
+
+div.cabecalho{
+    display: flex;
+    flex-direction: row; /* caixinhas em linha */
+    height:7.8vw; /*height:5.208vw;*/
+    margin-bottom:1.042vw;
+    width: 100%;
+    background-color: black;
+    border-bottom: solid 8px rgba(255, 0, 0, 0.651);
+}
+
+div.logo{
+    flex:30%;
+    text-align:center;
+}
+
+div.acesso{
+    flex:70%;
+    text-align:center;
+    color: white;
+    font-size: 3vw;
+    font-style: italic;
+    margin-top: 2vw;
+    margin-right: 1.5vw;
+}
+
+div.logo img{
+  width: 17vw;
+  margin-top: 1vw;
+}
+
+div.caixinha  a{
+    font-size: 1.3em;
+    text-decoration-line: none;
+    font-family:tahoma;
+    font-weight: bold;
+} 
+
+div.caixinha a:hover{
+    color:lightblue
+}
+
+div.caixinha p{
+   font-size:16px
+}
+
+div.menu{
+    margin-top:3vw;
+    margin-left: 3vw;
+}
+
+div.menucel{
+    display:none
+}
+
+div.menucomp{
+    display:block
+}
+
+div.menucomp a {
+    float:left;
+    padding:10px 30px;
+    text-decoration:none;
+    color: black;
+}
+
+div.menucomp a:hover {
+    color:red;
+    border-bottom: solid 2px red;
+}
+
+div.rodape{
+    width:100%;
+    height:7vw;
+    background-color:black;
+    padding-top:10px;
+    border-top:solid rgba(255, 0, 0, 0.651) 8px;
+    margin-top:10px; /*  *{ margin:5px auto; } usa o asterisco para colocar em tudo*/
+    color:white;
+    font-size: 15px;
+}
+div.submenu{
+    display:none; /* deixa oculto */
+    position:absolute;
+    text-align:center;
+    width:140px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-decoration:none;
+    background-color:rgb(213, 215, 215);
+}
+
+ div.principal {
+    float:left /* um ao lado do outro na horizontal */
+}
+
+div.principal:hover div.submenu, a.opy{
+    display:block; /* mostra o submenu */
+}
+
+button.botao{
+    border:0px;
+    margin:0px;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration:none;
+    color:black;
+    background-color:rgb(213, 215, 215);
+}
+button.botao:hover{
+    color: red;
+    border-bottom: red solid 2px;
+}
+
+div.principal{
+    width:120px;
+}
+* {
+    margin: 0 auto;
+}
+p.texto{
+    margin-top: 1vw;
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    padding: 2vw;
+    text-align: justify;
+}
+img.foto{
+    width: 70%;
+    margin-left: 19vw;
+    margin-top: 2vw;
+    width:50vw;
+    height:30vw;
+}
+p.frase{
+    color: red;
+    font-size: 40px;
+    margin-top:1.5vw ;
+    margin-left: 2vw;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Configuração para tablet - 900px */
+
+@media only screen and (max-width:900px){
+
+
+    div.grande{
+        height:2550px;
+        margin-top: 8vw;
+        margin-left: 2vw ;
+        margin-right: 2vw ;
+    }
+
+    div.logo img{
+        width: 18vw;
+        margin-top: 1vw;
+      }
+      div.rodape{
+          margin-top: 1.5vw;
+      }
+}
+
+/* Configuração para celular - tela até 600 px */
+
+@media only screen and (max-width:600px){
+
+    div.grande{
+        flex-direction:column;
+        height:1900px;
+        width:95%
+    }
+
+     div.caixinha1{
+        background-color:rgb(213, 215, 215);
+        margin:0.260vw 0.104vw;
+    }
+
+    div.caixinha1{
+        display:block;
+    }
+
+    div.cabecalho{
+        width:100%;
+    }
+
+    div.logo, div.acesso{
+        margin:0px;
+    }
+
+   div.menucel{
+       display:block;
+   }
+
+   div.menucomp{
+       display:none;
+   }
+ 
+   div.opcoes{
+       display:none;
+   }
+  
+   div.menucel:hover div.opcoes{
+        display:block;
+   }
+
+   div.logo img{
+    width: 19.5vw;
+    margin-top: 1.5vw;
+   }
+
+   div.acesso{
+   margin-top: 12px;
+   }
+
+   div.menucel a{
+    float:row;
+    padding:10px 30px;
+    text-decoration:none;
+    color: black;
+    display:block;
+    }
+
+   div.menucel a:hover, button.botao:hover{
+    color:red;
+   }
+   p.texto{
+    margin:3vw;
+    text-align: initial;
+}
+div.rodape{
+    width:100%;
+    height:7vw;
+    background-color:black;
+    border-top:solid rgba(255, 0, 0, 0.651) 8px;
+    margin-top:10px; /*  *{ margin:5px auto; } usa o asterisco para colocar em tudo*/
+    color:white;
+    font-size: 15px;
+}
+   
+}
